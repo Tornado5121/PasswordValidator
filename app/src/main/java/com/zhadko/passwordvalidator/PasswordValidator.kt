@@ -49,6 +49,8 @@ class PasswordValidator(private val context: Context) {
             }
         } catch (e: IOException) {
             e.printStackTrace()
+        } catch (e: NumberFormatException) {
+            e.printStackTrace()
         }
     }
 }
